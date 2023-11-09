@@ -36,6 +36,16 @@ class BinaryTree {
         PreOrder(curr.rhs);
     }
 
+    public void PostOrder(Node root) {
+        Node curr = root;
+        if(curr == null) {
+            return;
+        }
+        System.out.println(curr.data);
+        PostOrder(curr.lhs);
+        PostOrder(curr.rhs);
+    }
+
     public void addNode(int data) {
         Node newNode = new Node(data);
         Node curr = root;
@@ -69,7 +79,7 @@ class Main {
         bTree.root.rhs.rhs = new Node(7);
 
         //bTree.InOrder(bTree.root);
-        // postOrder
-        bTree.PreOrder(bTree.root);
+        //bTree.PreOrder(bTree.root);
+        bTree.PostOrder(bTree.root);
     }
 }
