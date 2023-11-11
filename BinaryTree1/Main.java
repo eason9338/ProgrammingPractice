@@ -79,7 +79,7 @@ class Main {
         bTree.root.rhs.rhs = new Node(7);
 
         //bTree.InOrder(bTree.root);
-        //bTree.PreOrder(bTree.root);
-        bTree.PostOrder(bTree.root);
+        bTree.PreOrder(bTree.root);
+        //bTree.PostOrder(bTree.root);
     }
 }
