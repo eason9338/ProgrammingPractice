@@ -5,3 +5,4 @@
 Secret*
 
 #ignore all .class files
+*.class
